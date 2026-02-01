@@ -1,0 +1,85 @@
+# Gitignore for Arduino Crawlspace Robot Project
+
+# Arduino IDE
+*.ino.cpp
+*.ino.hex
+*.ino.eep
+*.ino.elf
+*.ino.map
+.DS_Store
+
+# Build artifacts
+build/
+*.o
+*.a
+*.bin
+*.out
+
+# PlatformIO
+.pio/
+.vscode/
+.clang_complete
+.gcc-flags.json
+
+# Temporary files
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# IDE specific
+.idea/
+*.iml
+*.sublime-*
+
+# OS specific
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Compiled Python files (if using scripts)
+*.pyc
+__pycache__/
+
+# Log files
+*.log
+
+# Libraries (should be installed via Library Manager)
+libraries/RF24/
+libraries/Adafruit_BME680/
+libraries/Adafruit_VL53L4CD/
+libraries/Adafruit_Sensor/
+libraries/Adafruit_BusIO/
+
+# Keep README files in empty directories
+!**/README.md
+!**/.gitkeep
+
+# ESP32-CAM specific
+esp32_cam/*.bin
+esp32_cam/*.elf
+
+# Compiled sketches (keep source only)
+*.hex
+*.eep
+*.elf
+
+# 3D model exports (keep only STLs)
+3d_models/**/*.3mf
+3d_models/**/*.blend*
+3d_models/**/*.f3d
+3d_models/**/*.sldprt
+3d_models/**/*.sldasm
+3d_models/**/*.step
+3d_models/**/*.obj
+3d_models/**/*.gcode
+
+# Documentation working files
+docs/**/*.tmp
+docs/**/*~
+
+# Test outputs
+test_results/
+logs/
